@@ -10,5 +10,6 @@ public class RetiroSemanal {
         System.out.println("Retiro semanal: $" + retiroSemanal);
         System.out.println("Semanas en un mes: " + semanasEnUnMes);
         System.out.println("Saldo final al final del mes: $" + saldoFinal);
+        
     }
 }
