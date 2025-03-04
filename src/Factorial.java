@@ -7,14 +7,18 @@ public class Factorial {
         // Pedir al usuario que introduzca un número
         System.out.print("Introduce un número para calcular su factorial: ");
         int n = scanner.nextInt();
+        int x =n ;
+        int facto = 1;
+         int i =1;
+        while ( i <= n) {
+             facto = facto * n;
 
-        int factorial = 1;
-
-        for (int i = 1; i <= n; ++i) {
-            factorial *= i;
+            n=n-1;
         }
 
-        System.out.println("El factorial de " + n + " es " + factorial);
+       
+
+        System.out.println("El factorial de " +x + " es " + facto);
 
         scanner.close();
     }
