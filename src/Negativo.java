@@ -9,5 +9,7 @@ public class Negativo {
         } else if (!(nume>0)) {
             System.out.println("el numero es negativo");
         }
+        scanner.close();
     }
+   
 }
