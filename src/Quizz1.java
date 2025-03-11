@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Quizz2 {
+public class Quizz1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("INGRESE UN NUMERO ENTERO POSITIVO");
