@@ -15,5 +15,6 @@ public class Quizz2 {
             }
             System.out.println();
          }
+         scanner.close();
     }
 }
