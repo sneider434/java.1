@@ -10,7 +10,7 @@ public class DescuentoRopa {
 
         // Precio total de ambas prendas después del descuento
         double precioTotal = precioCamisetaConDescuento + precioPantalonConDescuento;
-        System.out.println("Precio total después del 15% de descuento: $" + precioTotal);
+        System.out.println("Precio total después del 15% de descueno: $" + precioTotal);
 
         // Descuento adicional del 5% en la segunda camiseta
         double descuentoAdicional = 0.05;
