@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Exercise {public static void main(String[] args) {
+public class iff {public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println(" ingrese un numero");
         int num = scanner.nextInt();
@@ -11,18 +11,10 @@ public class Exercise {public static void main(String[] args) {
         }
 
         System.out.println(" ingrese un numero");
-<<<<<<< HEAD
-    
         scanner.close();
-          
-=======
-        scanner.close();
-        
 
     }
-           
->>>>>>> 16080ec ( se suben nuevos jercicios)
+          
       
  }
 
-}

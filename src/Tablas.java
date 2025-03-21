@@ -7,7 +7,7 @@ public class Tablas {
                 int w = x *c;
                 System.out.println(c+" x "+ x +" = "+ w);
             }
-            int x=0;
+            
         }
        }
        
