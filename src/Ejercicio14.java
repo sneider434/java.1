@@ -5,6 +5,8 @@ public class Ejercicio14{
       Scanner scanner = new Scanner(System.in);
       for (int x = 1;x<101;x++){
         System.out.println(x);
+        
       }
+      scanner.close();
  }
 }

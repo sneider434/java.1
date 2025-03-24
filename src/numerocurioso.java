@@ -16,9 +16,10 @@ public class numerocurioso {
                 int unidad = numero % 10 ;
                 int decima = (numero/10)% 10;
                 int centena = numero / 100;
-                scanner.close();
+            
             }
         }
+        scanner.close();
        
         }
        

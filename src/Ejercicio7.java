@@ -14,6 +14,7 @@ public class Ejercicio7{
     }else if (numero > 99 & numero < 1000){
       System.out.println("es un numero de 3 digitos");
     }
+    scanner.close();
   }
 }
 

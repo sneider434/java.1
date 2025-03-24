@@ -12,5 +12,6 @@ public class Ejercicio5{
         }else {
           System.out.println(nume2);
         }
+        scanner.close();
     }
 }

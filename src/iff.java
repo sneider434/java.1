@@ -11,10 +11,8 @@ public class iff {public static void main(String[] args) {
         }
 
         System.out.println(" ingrese un numero");
-        scanner.close();
+        scanner.close();    
 
     }
-          
-      
  }
 

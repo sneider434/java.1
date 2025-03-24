@@ -11,5 +11,6 @@ public class Ejercicio6{
         System.out.println(" es nulo");
        }else if (numero < 0)
        System.out.println("es negativo");
+       scanner.close();
     }
 }

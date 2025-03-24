@@ -17,6 +17,7 @@ public class Ejercicio10{
         System.out.println("REGULAR");
       }else if (promedio< 4 ){
         System.out.println("REPROBADO");
+        scanner.close();
       }
  }
 }

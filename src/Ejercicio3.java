@@ -15,6 +15,7 @@ public class Ejercicio3 {
         }else {
           System.out.println("A ingresado un numero invalido");
         }
+        scanner.close();
         
     }
 }

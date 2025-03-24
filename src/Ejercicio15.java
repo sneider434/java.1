@@ -7,5 +7,6 @@ public class Ejercicio15{
       for (int x = 1;x<11;x++){
         System.out.println("5 "+"* " + x+"= "+nume*x);
       }
+      scanner.close();
  }
 }

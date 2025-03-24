@@ -8,6 +8,7 @@ public class Ejercicio8{
      for (int x = 1;x < preguntas;x++){
        
      }
+     scanner.close();
   }
 }
 

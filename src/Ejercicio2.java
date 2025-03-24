@@ -16,5 +16,6 @@ public class Ejercicio2 {
         }else  {
           System.out.println("NO APROBADO");
         }
+        scanner.close();
     }
 }

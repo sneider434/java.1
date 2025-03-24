@@ -17,6 +17,7 @@ public class Ejercicio11{
         System.out.println("tiene un aumento del 5%"+ aumento);
       }else {
         System.out.println("su sueldo es de : "+ sueldo);
+        scanner.close();
       }
  }
 }

@@ -8,6 +8,7 @@ public class Ejercicio4{
      if (nume> 3000){
       System.out.println("debe pagar impuestos");
      }
+     scanner.close();
         
     }
 }

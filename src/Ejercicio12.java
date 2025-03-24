@@ -18,5 +18,6 @@ public class Ejercicio12{
       }
       System.out.println("notas superiores a 7 :"+ w);
       System.out.println("notas inferiores a 7 :"+ e);
+      scanner.close();
  }
 }
