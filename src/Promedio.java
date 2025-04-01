@@ -9,6 +9,7 @@ public class Promedio {
         for (int x = 0;x<6;x++){
             notas[x]=scanner.nextInt();
         }
+        scanner.close();
     }
     
 }

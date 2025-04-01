@@ -18,6 +18,7 @@ public class Triangulo {
             }
             filas=filas+1;
             System.out.println();
+            System.out.println(espacio);
         }
        
 
