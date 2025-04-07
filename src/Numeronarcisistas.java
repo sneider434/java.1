@@ -6,7 +6,7 @@ public class Numeronarcisistas{
         int unidad= 1 ;int decima=0;int centena=0;
         int x =1;
         while (x > 0) {
-            System.out.println("ingresew un numero de tres cifras ( 100 - 999)");
+            System.out.println("ingrese un numero de tres cifras ( 100 - 999)");
         int numero = scanner.nextInt();
             if (numero>999 || numero < 100){
                 System.out.println("error -------------- intente de nuevo;");
