@@ -30,9 +30,9 @@ public class Ejeciciotarea {
         }
           for(int i=0;i<numestudiantes;i++){// este for muestra los aprobados y no aprobados
             if(promedio_estudiante[i]>=3.0){
-               System.out.println("el estudiante "+ nombres[i]+"aprobo con un promedio de "+promedio_estudiante[i]);
+               System.out.println("el estudiante "+ nombres[i]+"con el codigo "+codigo[i]+"aprobo con un promedio de "+promedio_estudiante[i]);
             }else{
-                System.out.println("el estudiante "+ nombres[i]+"no aprobo con un promedio de "+promedio_estudiante[i]);
+                System.out.println("el estudiante "+ nombres[i]+"con el codigo "+codigo[i]+" no aprobo con un promedio de "+promedio_estudiante[i]);
             }
           }
           scanner.close();
