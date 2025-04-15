@@ -7,10 +7,11 @@ public class RegistroEstudiantes {
         System.out.println("ingrese numero de estudiantes que desea ingresar");
         numestudiantes= scanner.nextInt();
         scanner.nextLine(); // limpiar salto de linea
-        double[][] notas = new double [numestudiantes][3];
-        String[] nombres = new String[numestudiantes];
-        int[] codigo = new int[numestudiantes];
-        int promedio_mayor=0;
+        double[][] notas = new double [numestudiantes][3]; // variable de las notas
+        String[] nombres = new String[numestudiantes];// variable de los nombres de estudiantes
+        int[] codigo = new int[numestudiantes];// variable donde se almacenan las codigos 
+       
+      
         double[] promedio_estudiante = new double[numestudiantes];
         // este for es para ingresar nombres y codigos del numero de estudiantes
         for(int x =0;x<numestudiantes;x++ ){
@@ -34,14 +35,30 @@ public class RegistroEstudiantes {
                 }   while(notas[x][j]>5.0 || notas[x][j]<0.0) ;
                 suma += notas[x][j];// se suman las 3 notas a cada estudiante        
             }
-            scanner.nextLine();
+            scanner.nextLine();// limpiar salto de linea
             promedio_estudiante[x]=suma/3;// se almacena cada promedio
-            for (int i =0;i<numestudiantes;i++){
-                if (promedio_estudiante[i]>promedio_estudiante[promedio_mayor]){
-                    promedio_mayor=i;
-                }
-              }
+
+           
+            
         }
+        // todo lo que saldra en la terminal
+
+        double promedio_mayor=promedio_estudiante[0];// variable para verificar los promedios y saber  cual es el mayor
+
+        // identificar el mejor promedio
+        for (int i =1;i<numestudiantes;i++){
+            if (promedio_estudiante[i]>promedio_mayor){
+                promedio_mayor=promedio_estudiante[i];
+            }
+        }
+        System.out.println("\n--- Resultados ---");
+        // Mostra los estudiantes con el mejor promedio
+         for (int x =0;x<numestudiantes;x++){
+            if ( promedio_estudiante[x]==promedio_mayor){
+                System.out.println("el estudiante : "+nombres[x]+ "con el codigo : "+ codigo[x]+ " ");
+            }
+         }
+        // aprobados y no aprobados
           for(int i=0;i<numestudiantes;i++){// este for muestra los aprobados y no aprobados
             if(promedio_estudiante[i]>=3.0){
                System.out.println("el estudiante "+ nombres[i]+" / con el codigo "+codigo[i]+" / aprobo con un promedio de "+promedio_estudiante[i]);
@@ -49,19 +66,15 @@ public class RegistroEstudiantes {
                 System.out.println("el estudiante "+ nombres[i]+" / con el codigo "+codigo[i]+" / no aprobo con un promedio de "+promedio_estudiante[i]);
             }
           }
-          double suma_promedio=0;
-          for(int i=0;i<numestudiantes;i++){
-            suma_promedio+=promedio_estudiante[i];
-          }
-          double promedio_general = suma_promedio/numestudiantes;
-          System.out.println("El promedio general del grupo fue de : "+ promedio_general);
+           // promedio general del curso
+           double suma_promedio=0;
+            for(int i=0;i<numestudiantes;i++){
+             suma_promedio+=promedio_estudiante[i];
+            }
+            double promedio_general = suma_promedio/numestudiantes;
+            System.out.println("El promedio general del grupo fue de : "+ promedio_general);
+
+         scanner.close();
           
-          
-          System.out.println("El mejor estudiante es " + nombres[promedio_mayor] +   " con código " + codigo[promedio_mayor] +   " y promedio " + promedio_estudiante[promedio_mayor]);
-          scanner.close();
-          for(int i=0;i<notas.length;i++){
-            for (int x =0;x<notas.length;x++)
-            System.out.println(notas[x][i]);
-          }
     }
-}
+  }
