@@ -52,12 +52,16 @@ public class RegistroEstudiantes {
             }
         }
         System.out.println("\n--- Resultados ---");
-        // Mostra los estudiantes con el mejor promedio
+        System.out.println("--------------------------------------");
+        System.out.println("estudiante/s  con  el/los  mejor/es  promedio/s");
+        // Mostrar  los/el estudiante/s con el mejor promedio
          for (int x =0;x<numestudiantes;x++){
             if ( promedio_estudiante[x]==promedio_mayor){
-                System.out.println("el estudiante : "+nombres[x]+ "con el codigo : "+ codigo[x]+ " ");
+                System.out.println("el estudiante : "+nombres[x]+ "con el codigo : "+ codigo[x]+ " obtuvo el mejor promedio de:  "+ promedio_mayor);
             }
          }
+         System.out.println("--------------------------------------");
+         System.out.println("estudiantes aprobados y no aprobados");
         // aprobados y no aprobados
           for(int i=0;i<numestudiantes;i++){// este for muestra los aprobados y no aprobados
             if(promedio_estudiante[i]>=3.0){
@@ -66,6 +70,8 @@ public class RegistroEstudiantes {
                 System.out.println("el estudiante "+ nombres[i]+" / con el codigo "+codigo[i]+" / no aprobo con un promedio de "+promedio_estudiante[i]);
             }
           }
+          System.out.println("--------------------------------------");
+          System.out.println("promedio general");
            // promedio general del curso
            double suma_promedio=0;
             for(int i=0;i<numestudiantes;i++){
@@ -75,6 +81,7 @@ public class RegistroEstudiantes {
             System.out.println("El promedio general del grupo fue de : "+ promedio_general);
 
          scanner.close();
+         
           
     }
   }

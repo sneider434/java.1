@@ -12,9 +12,9 @@ public class Ejercicio1 {
         }
         for(int k =0;k<vectorNumeros.length;k++){
           cuadrado=Math.pow(vectorNumeros[k],2);
-          System.out.println("cuadrado de  "+vectorNumeros[k]+" = "+cuadrado);
+          System.out.println("cuadrado de : "+vectorNumeros[k]+" = "+cuadrado);
           cubo=Math.pow(vectorNumeros[k],3);
-          System.out.println("cubo="+vectorNumeros[k]+" = "+cubo);
+          System.out.println("cubo de :"+vectorNumeros[k]+" = "+cubo);
         }
         scanner.close();
     }
