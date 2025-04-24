@@ -12,12 +12,20 @@ public class Ejercicio3 {
         double nota_menor =0;
         // en este for se llena el vector que llevara las 5 notas del estudiante
         for ( int i =0;i<numero_notas;i++){
-            System.out.println("ingrese la nota de la materia #"+(i+1));
-            notas[i]=scanner.nextDouble(); 
+            do {
+                System.out.println("ingrese la nota de la materia #"+(i+1));
+                    notas[i]=scanner.nextDouble();
+                if(notas[i]<0.0 || notas[i]>10.0){
+                    System.out.println("error-----------------------");
+                    System.out.println("intente de nuevo");
+                }
+                 
+            } while (notas[i]<0.0 || notas[i]>10.0);
+           
         }
         // en este for mostraremos todas las notas
         for(int x =0;x<numero_notas;x++){
-            System.out.println(" nota #"+x+" = "+ notas[x]);
+            System.out.println(" nota #"+(x+1)+" = "+ notas[x]);
             promedio+=notas[x];// aqui se acumula las 5 notas y se suman
         }
         // aqui el promedio general
@@ -25,13 +33,14 @@ public class Ejercicio3 {
         // encontrar la nota mayor y nota menor
         nota_menor=nota_mayor;
         for(int x=0;x<numero_notas;x++){
-            if(notas[x]>nota_menor){
-                nota_menor=notas[x];
+            if(notas[x]>nota_mayor){//verifica si la nota es mayor que la variable que inicia en cero.
+                nota_mayor=notas[x];// si es asi la variable se iguala al valor de esa nota
              }
         }
+        nota_menor=nota_mayor;// la variable de control empieza con el valor de la nota mayor
         for(int i=0;i<numero_notas;i++){
-             if(nota_mayor>notas[i]){
-                nota_mayor=notas[i];
+             if(nota_menor>notas[i]){//verifica si la nota es menor que la variable de control 
+                nota_menor=notas[i];// si la condicion se cumple se va actualizandop a la nota mas baja.
              }
         }
          // mostrar la nota menor y mayor
