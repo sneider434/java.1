@@ -46,6 +46,7 @@ public class Ejercicio3 {
          // mostrar la nota menor y mayor
          System.out.println(" la nota menor fue de : "+ nota_menor);
          System.out.println("la mota mayor fue de : "+ nota_mayor);
+         scanner.close();
 
     }
 }
