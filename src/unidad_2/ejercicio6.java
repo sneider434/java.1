@@ -29,12 +29,12 @@ public class ejercicio6 {
         
         for (int i = 0; i < meses.length; i++) {
             if (imput==i) {
-                if(imput==1 || imput==3 || imput==5 || imput==7 || imput==8 || imput ==10 || imput==12){
-                    System.out.println("Mes " + meses[i-1][0] + ": " + meses[i-1][1]+"tiene 31 dias ");
-                }else if(imput==2){
-                    System.out.println("Mes " + meses[i-1][0] + ": " + meses[i-1][1]+"tiene 28 dias ");
-                }else{
-                    System.out.println("Mes " + meses[i-1][0] + ": " + meses[i-1][1]+"tiene 30 dias ");
+                if(imput==1 || imput==3 || imput==5 || imput==7 || imput==8 || imput ==10 || imput==12){// este es para los meses que tienen 31 dias
+                    System.out.println("Mes " + meses[i-1][0] + " : " + meses[i-1][1]+"  tiene 31 dias ");
+                }else if(imput==2){// este para febrero
+                    System.out.println("Mes " + meses[i-1][0] + " : " + meses[i-1][1]+"  tiene 28 dias ");
+                }else{// y este para los meses que tienen 30 dias
+                    System.out.println("Mes " + meses[i-1][0] + " : " + meses[i-1][1]+"  tiene 30 dias ");
                 }
             }
             
