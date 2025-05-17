@@ -1,4 +1,4 @@
-package unidad_2;
+package unidad_2.Ejercicios_practica;
 import java.util.Scanner;
 public class Ejercicio1 {
     public static void main(String[] args) {

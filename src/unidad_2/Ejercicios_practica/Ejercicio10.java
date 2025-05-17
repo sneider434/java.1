@@ -1,4 +1,4 @@
-package unidad_2;
+package unidad_2.Ejercicios_practica;
 
 import java.util.Scanner;
 import java.util.Random;// se importa una clase que da numeros aleatorios enteros
