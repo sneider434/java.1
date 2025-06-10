@@ -13,5 +13,7 @@ public class Practica3 {
 
     public static void main(String[] args) {
         double diametro=5;
+        System.out.println(diametro);
     }
+    
 }
